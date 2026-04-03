@@ -1,0 +1,10 @@
+node_modules
+.svelte-kit
+build
+.git
+.vercel
+.netlify
+.wrangler
+.env
+.env.*
+npm-debug.log*

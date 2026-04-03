@@ -1,0 +1,1478 @@
+<!-- global header -->
+    <header>
+      <a
+        href="/"
+        class="brand-link"
+        aria-label="brand-link"
+      >
+        <img
+          src="/logos/logo_ott.png"
+          alt="logo_OTT"
+          loading="eager"
+          width="199"
+          height="89"
+        />
+        <img
+          src="/logos/logo_ott_negative.png"
+          alt="logo_OTT"
+          loading="eager"
+          width="199"
+          height="89"
+        />
+      </a>
+
+      <nav>
+        <ul>
+          <li>
+            <button
+              id="sound-button"
+              class="button light button-padding"
+              aria-label="sound-button"
+            >
+              <svg
+                width="25"
+                class="sound-icon"
+                viewBox="0 0 35 40"
+              >
+                <path
+                  d="M2,22 C13,22 20,22 31,22"
+                  fill="none"
+                  stroke-width="1"
+                  stroke="hsl(0, 0%, 0%)"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </button>
+          </li>
+
+          <li>
+            <button
+              id="language-selector"
+              aria-label="language-selector"
+            >
+              EN
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="5"
+                viewBox="0 0 6 5"
+                fill="none"
+              >
+                <path
+                  d="M0.454349 0.757248C0.254392 0.423986 0.494448 2.07786e-08 0.883095 3.71111e-08L5.1169 2.15032e-07C5.50555 2.31365e-07 5.74561 0.423986 5.54565 0.757248L3.42875 4.28542C3.23454 4.60909 2.76546 4.60909 2.57125 4.28542L0.454349 0.757248Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </li>
+
+          <li>
+            <button
+              id="support-button"
+              class="button cta-button to-form custom-button"
+              aria-label="support"
+            >
+              <div class="support-button__wrapper">
+                <div class="arrow light">
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="Arrow 1"
+                      d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM1 9H23V7H1V9Z"
+                      fill="#000"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="arrow__mock"></div>
+
+              <p class="support__button__text">Are you the one?</p>
+              <span>
+                <img
+                  src="/icons/angle_arrow.svg"
+                  alt="angle_arrow"
+                  width="25"
+                  height="25"
+                  loading="lazy"
+                />
+                <img
+                  src="/icons/angle_arrow.svg"
+                  alt="angle_arrow"
+                  width="25"
+                  height="25"
+                  loading="lazy"
+                />
+                <img
+                  src="/icons/angle_arrow.svg"
+                  alt="angle_arrow"
+                  width="25"
+                  height="25"
+                  loading="lazy"
+                />
+              </span>
+            </button>
+          </li>
+
+          <li>
+            <button
+              id="support-button-menu-mobile"
+              class="to-form"
+            >
+              <span>
+                <svg
+                  width="24"
+                  height="16"
+                  viewBox="0 0 24 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Arrow 1"
+                    d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM1 9H23V7H1V9Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </span>
+              Support us
+            </button>
+          </li>
+        </ul>
+
+        <div
+          id="nav__menu__button"
+          class="nav__menu__button"
+        >
+          <span class="nav__menu__button__line nav__menu__button__line--top"></span>
+          <span class="nav__menu__button__line nav__menu__button__line--middle"></span>
+          <span class="nav__menu__button__line nav__menu__button__line--bottom"></span>
+
+          <span class="nav__menu__button__line__close nav__menu__button__line__close--top"></span>
+          <span class="nav__menu__button__line__close nav__menu__button__line__close--bottom"></span>
+        </div>
+      </nav>
+    </header>
+
+    <audio
+      loop
+      preload="none"
+      class="audio"
+    >
+      <source
+        src="/audio/OTT.flac"
+        type="audio/flac"
+      />
+    </audio>
+
+    <!-- global menu  -->
+    <div
+      id="global__menu"
+      class="global__menu"
+    >
+      <!-- menu background  -->
+      <div class="global__menu__background">
+        <video
+          src="../assets/videos/public-relations-1.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+
+      <!-- menu content  -->
+      <div class="global__menu__content">
+        <a
+          href="/"
+          class="global__menu__option__home"
+        >
+          <span class="global__menu__option__home--text global__menu__heading">Home</span>
+          <span class="global__menu__option__home--number global__menu__number">(01)</span>
+          <span class="global__menu__option__home--icon global__menu__icon"
+            ><img
+              src="../assets/images/menu-arrow.svg"
+              alt="arrow"
+          /></span>
+        </a>
+
+        <div class="global__menu__services__wrapper">
+          <div class="global__menu__option__services">
+            <span class="global__menu__option__services--icon global__menu__icon"
+              ><img
+                src="../assets/images/menu-cross.svg"
+                alt="cross"
+            /></span>
+            <span class="global__menu__option__services--text global__menu__heading global__menu__heading--desktop">Marketing Services</span>
+            <span class="global__menu__option__services--text global__menu__heading global__menu__heading--mobile"> Services</span>
+
+            <span class="global__menu__option__services--number global__menu__number">(02)</span>
+          </div>
+
+          <div class="global__menu__services__list">
+            <ul class="global__menu__services__list__wrapper global__menu__services__list--1">
+              <a
+                href="/content-marketing"
+                class="global__menu__services__list__item"
+              >
+                <span class="global__menu__services__list__item__number">01.</span>
+                <span class="global__menu__services__list__item__text">Content Marketing</span>
+              </a>
+
+              <a
+                href="/ppc-&-sem"
+                class="global__menu__services__list__item"
+              >
+                <span class="global__menu__services__list__item__number">02.</span>
+                <span class="global__menu__services__list__item__text">PPC & SEM</span>
+              </a>
+
+              <a
+                href="/seo"
+                class="global__menu__services__list__item"
+              >
+                <span class="global__menu__services__list__item__number">03.</span>
+                <span class="global__menu__services__list__item__text">SEO</span>
+              </a>
+            </ul>
+
+            <ul class="global__menu__services__list__wrapper global__menu__services__list--2">
+              <a
+                href="/email-marketing"
+                class="global__menu__services__list__item"
+              >
+                <span class="global__menu__services__list__item__number">04.</span>
+                <span class="global__menu__services__list__item__text">Email Marketing</span>
+              </a>
+
+              <a
+                href="/branding"
+                class="global__menu__services__list__item"
+              >
+                <span class="global__menu__services__list__item__number">05.</span>
+                <span class="global__menu__services__list__item__text">Branding</span>
+              </a>
+
+              <a
+                href="/social-media"
+                class="global__menu__services__list__item"
+              >
+                <span class="global__menu__services__list__item__number">06.</span>
+                <span class="global__menu__services__list__item__text">Social Media</span>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="global__menu__departments__wrapper">
+          <div class="global__menu__option__departments">
+            <span class="global__menu__option__departments--icon global__menu__icon"
+              ><img
+                src="../assets/images/menu-cross.svg"
+                alt="cross"
+            /></span>
+            <span class="global__menu__option__departments--text global__menu__heading global__menu__heading--desktop">OTT Departments</span>
+            <span class="global__menu__option__departments--text global__menu__heading global__menu__heading--mobile">Departments</span>
+
+            <span class="global__menu__option__departments--number global__menu__number">(03)</span>
+          </div>
+
+          <div class="global__menu__departments__list">
+            <ul class="global__menu__departments__list__wrapper global__menu__departments__list--1">
+              <a
+                href="/cyber-security"
+                class="global__menu__departments__list__item"
+              >
+                <span class="global__menu__departments__list__item__number">01.</span>
+                <span class="global__menu__departments__list__item__text">Cyber Security</span>
+              </a>
+
+              <a
+                href="/reputation-management"
+                class="global__menu__departments__list__item"
+              >
+                <span class="global__menu__departments__list__item__number">02.</span>
+                <span class="global__menu__departments__list__item__text">Reputation Management</span>
+              </a>
+
+              <a
+                href="/finance"
+                class="global__menu__departments__list__item"
+              >
+                <span class="global__menu__departments__list__item__number">03.</span>
+                <span class="global__menu__departments__list__item__text">Finance</span>
+              </a>
+
+              <a
+                href="/voip"
+                class="global__menu__departments__list__item"
+              >
+                <span class="global__menu__departments__list__item__number">04.</span>
+                <span class="global__menu__departments__list__item__text">VOIP</span>
+              </a>
+            </ul>
+
+            <ul class="global__menu__departments__list__wrapper global__menu__departments__list--2">
+              <a
+                href="/ai-solutions"
+                class="global__menu__departments__list__item"
+              >
+                <span class="global__menu__departments__list__item__number">05.</span>
+                <span class="global__menu__departments__list__item__text">AI Solutions</span>
+              </a>
+
+              <a
+                href="/public-relations"
+                class="global__menu__departments__list__item"
+              >
+                <span class="global__menu__departments__list__item__number">06.</span>
+                <span class="global__menu__departments__list__item__text">Public Relations</span>
+              </a>
+
+              <a
+                href="/business-solutions"
+                class="global__menu__departments__list__item"
+              >
+                <span class="global__menu__departments__list__item__number">07.</span>
+                <span class="global__menu__departments__list__item__text">Business Solutions</span>
+              </a>
+
+              <a
+                href="/affiliate-program"
+                class="global__menu__departments__list__item"
+              >
+                <span class="global__menu__departments__list__item__number">08.</span>
+                <span class="global__menu__departments__list__item__text">Affiliate Programs</span>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu contacts  -->
+      <div class="global__menu__contacts">
+        <div class="global__menu__contacts__socials">
+          <span class="global__menu__contacts__socials__text">Follow Us</span>
+
+          <!-- menu socials icons  -->
+          <div class="global__menu__contacts__socials__icons">
+            <a
+              href=""
+              class="global__menu__contacts__socials__icons__icon"
+              ><img
+                src="../assets/images/menu-facebook-icon.svg"
+                alt="facebook"
+            /></a>
+
+            <a
+              href=""
+              class="global__menu__contacts__socials__icons__icon"
+              ><img
+                src="../assets/images/menu-linkedin-icon.svg"
+                alt="linkedin"
+            /></a>
+
+            <a
+              href=""
+              class="global__menu__contacts__socials__icons__icon"
+              ><img
+                src="../assets/images/menu-instagram-icon.svg"
+                alt="instagram"
+            /></a>
+
+            <a
+              href=""
+              class="global__menu__contacts__socials__icons__icon"
+              ><img
+                src="../assets/images/menu-x-icon.svg"
+                alt="x"
+            /></a>
+          </div>
+        </div>
+
+        <div class="global__menu__contacts__email">
+          <span class="global__menu__contacts__email__text">Stay in touch</span>
+
+          <div class="global__menu__contacts__email__input">
+            <input
+              type="email"
+              placeholder="Your email"
+            />
+
+            <span class="global__menu__contacts__email__input__arrow">
+              <img
+                src="../assets/images/arrow-black.svg"
+                alt="arrow"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="smooth-wrapper">
+      <div class="smooth-content">
+        <!-- main wrapper  -->
+        <main class="main__wrapper">
+          <!-- floating spinner  -->
+          <div class="custom__floating__spinner">
+            <img
+              class="custom__floating__spinner__arrow"
+              src="/assets/images/arrow-black.svg"
+              alt="arrow"
+            />
+            <div
+              class="custom__floating__spinner__text__wrapper"
+              data-rotation
+            >
+              <img
+                class="custom__floating__spinner__text"
+                src="/assets/images/curved-text.svg"
+                alt="curved text"
+              />
+            </div>
+          </div>
+
+          <!-- section 1  -->
+          <section
+            class="section-1"
+            data-logo="white"
+            data-nav="white"
+            data-logo-mobile="black"
+            data-nav-mobile="black"
+          >
+            <!-- section 1 video  -->
+            <div class="section-1__image">
+              <video
+                src="/assets/videos/email-marketing-1.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+
+            <!-- section 1 content  -->
+            <div class="section-1__content">
+              <h2>Engage and Convert with OTT Email Marketing</h2>
+
+              <p>Harness the power of personalized email campaigns, automation, and segmentation to reach your audience and drive conversions. Let us help you optimize engagement with targeted, data-driven strategies</p>
+
+              <a
+                data-text="Get a Free Email Marketing Consultation"
+                data-text-mobile="Get a Free Consultation"
+                class="section-1__button to-form"
+              >
+                <span>
+                  <img
+                    src="/assets/images/arrow-white.svg"
+                    alt="arrow white"
+                  />
+                </span>
+              </a>
+
+              <span
+                class="section-1__star"
+                data-rotation
+              >
+                <img
+                  src="/assets/images/star-black.svg"
+                  alt="star black"
+                />
+              </span>
+            </div>
+
+            <!-- section 1 ellipses  -->
+            <div class="section-1__ellipse--1"></div>
+            <div class="section-1__ellipse--2"></div>
+          </section>
+
+          <!-- section 2  -->
+          <section
+            class="section-2"
+            data-logo="black"
+            data-nav="white"
+            data-logo-mobile="black"
+            data-nav-mobile="black"
+          >
+            <!-- section 2 content  -->
+            <div class="section-2__content">
+              <h2>
+                Tailored
+                <span class="section-2__rect"> <span></span></span>
+                Email Campaigns
+              </h2>
+
+              <p>We create customized, segmented email campaigns that target your specific audience, delivering the right message at the right time.</p>
+
+              <!-- section 2 list  -->
+              <ul class="section-2__list">
+                <li>
+                  <div class="section-2__list__check">
+                    <img
+                      src="/assets/images/purple-check.svg"
+                      alt="check"
+                    />
+                  </div>
+
+                  <div class="section-2__list__content">
+                    <h3>Email Automation</h3>
+                    <p>Save time and engage customers with automated email workflows triggered by user behavior.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="section-2__list__check">
+                    <img
+                      src="/assets/images/purple-check.svg"
+                      alt="check"
+                    />
+                  </div>
+
+                  <div class="section-2__list__content">
+                    <h3>Advanced Segmentation</h3>
+                    <p>Use customer data to create hyper-targeted segments for improved relevance.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="section-2__list__check">
+                    <img
+                      src="/assets/images/purple-check.svg"
+                      alt="check"
+                    />
+                  </div>
+
+                  <div class="section-2__list__content">
+                    <h3>A/B Testing</h3>
+                    <p>Optimize campaigns with A/B testing for better performance on open and click-through rates.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- section 2 image  -->
+            <div class="section-2__image">
+              <img
+                src="/assets/images/email-marketing-1.webp"
+                alt="email marketing"
+              />
+            </div>
+
+            <!-- section 2 ellipses  -->
+            <div class="section-2__ellipse--1"></div>
+            <div class="section-2__ellipse--2"></div>
+          </section>
+
+          <!-- section 3  -->
+          <section
+            class="section-3"
+            data-logo="white"
+            data-nav="black"
+            data-logo-mobile="black"
+            data-nav-mobile="black"
+          >
+            <!-- section 3 image  -->
+            <div class="section-3__image">
+              <img
+                src="/assets/images/email-marketing-1.webp"
+                alt="email marketing"
+              />
+            </div>
+
+            <!-- section 3 content  -->
+            <div class="section-3__content">
+              <!-- section 3 cards  -->
+              <div class="section-3__card section-3__card--top">
+                <h3>Automated Campaigns</h3>
+                <p>Reach your audience at the perfect time with triggered, personalized email flows.</p>
+
+                <svg class="svg__desktop" xmlns="http://www.w3.org/2000/svg" width="386" height="268" viewBox="0 0 386 268" fill="none">
+                  <g filter="url(#filter0_b_1558_9001)">
+                    <path d="M0 20C0 8.9543 8.95431 0 20 0L366 0C377.046 0 386 8.9543 386 20V248C386 259.046 377.046 268 366 268H20C8.95431 268 0 259.046 0 248L0 20Z" fill="white" fill-opacity="0.11"/>
+                    <path d="M2.5 20C2.5 10.335 10.335 2.5 20 2.5L366 2.5C375.665 2.5 383.5 10.335 383.5 20V248C383.5 257.665 375.665 265.5 366 265.5H20C10.335 265.5 2.5 257.665 2.5 248L2.5 20Z" stroke="url(#paint0_linear_1558_9001)" stroke-width="5"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_b_1558_9001" x="-18" y="-18" width="422" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="9"/>
+                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1558_9001"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1558_9001" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_1558_9001" x1="0" y1="0" x2="290.396" y2="347.82" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#7963A4"/>
+                      <stop offset="0.165" stop-color="#DFDFDF" stop-opacity="0.3"/>
+                      <stop offset="0.49" stop-color="#F8F8F8"/>
+                      <stop offset="0.83" stop-color="#F5F5F5" stop-opacity="0"/>
+                      <stop offset="1" stop-color="#7963A4"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg class="svg__mobile" xmlns="http://www.w3.org/2000/svg" width="337" height="175" viewBox="0 0 337 175" fill="none">
+                  <g filter="url(#filter0_b_1685_12186)">
+                    <path d="M0 20C0 8.9543 8.95431 0 20 0L317 0C328.046 0 337 8.95431 337 20V155C337 166.046 328.046 175 317 175L20 175C8.9543 175 0 166.046 0 155L0 20Z" fill="white" fill-opacity="0.11"/>
+                    <path d="M2.5 20C2.5 10.335 10.335 2.5 20 2.5L317 2.5C326.665 2.5 334.5 10.335 334.5 20V155C334.5 164.665 326.665 172.5 317 172.5L20 172.5C10.335 172.5 2.5 164.665 2.5 155L2.5 20Z" stroke="url(#paint0_linear_1685_12186)" stroke-width="5"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_b_1685_12186" x="-18" y="-18" width="373" height="211" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="9"/>
+                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1685_12186"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1685_12186" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_1685_12186" x1="0" y1="0" x2="173.164" y2="277.307" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#7963A4"/>
+                      <stop offset="0.165" stop-color="#DFDFDF" stop-opacity="0.3"/>
+                      <stop offset="0.49" stop-color="#F8F8F8"/>
+                      <stop offset="0.83" stop-color="#F5F5F5" stop-opacity="0"/>
+                      <stop offset="1" stop-color="#7963A4" stop-opacity="0.882353"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <div class="section-3__card section-3__card--mid">
+                <h3>Better Engagement</h3>
+                <p>Improve interaction with highly relevant emails tailored to user behavior.</p>
+                <svg class="svg__desktop" xmlns="http://www.w3.org/2000/svg" width="386" height="268" viewBox="0 0 386 268" fill="none">
+                  <g filter="url(#filter0_b_1558_9001)">
+                    <path d="M0 20C0 8.9543 8.95431 0 20 0L366 0C377.046 0 386 8.9543 386 20V248C386 259.046 377.046 268 366 268H20C8.95431 268 0 259.046 0 248L0 20Z" fill="white" fill-opacity="0.11"/>
+                    <path d="M2.5 20C2.5 10.335 10.335 2.5 20 2.5L366 2.5C375.665 2.5 383.5 10.335 383.5 20V248C383.5 257.665 375.665 265.5 366 265.5H20C10.335 265.5 2.5 257.665 2.5 248L2.5 20Z" stroke="url(#paint0_linear_1558_9001)" stroke-width="5"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_b_1558_9001" x="-18" y="-18" width="422" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="9"/>
+                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1558_9001"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1558_9001" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_1558_9001" x1="0" y1="0" x2="290.396" y2="347.82" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#7963A4"/>
+                      <stop offset="0.165" stop-color="#DFDFDF" stop-opacity="0.3"/>
+                      <stop offset="0.49" stop-color="#F8F8F8"/>
+                      <stop offset="0.83" stop-color="#F5F5F5" stop-opacity="0"/>
+                      <stop offset="1" stop-color="#7963A4"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg class="svg__mobile" xmlns="http://www.w3.org/2000/svg" width="337" height="175" viewBox="0 0 337 175" fill="none">
+                  <g filter="url(#filter0_b_1685_12186)">
+                    <path d="M0 20C0 8.9543 8.95431 0 20 0L317 0C328.046 0 337 8.95431 337 20V155C337 166.046 328.046 175 317 175L20 175C8.9543 175 0 166.046 0 155L0 20Z" fill="white" fill-opacity="0.11"/>
+                    <path d="M2.5 20C2.5 10.335 10.335 2.5 20 2.5L317 2.5C326.665 2.5 334.5 10.335 334.5 20V155C334.5 164.665 326.665 172.5 317 172.5L20 172.5C10.335 172.5 2.5 164.665 2.5 155L2.5 20Z" stroke="url(#paint0_linear_1685_12186)" stroke-width="5"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_b_1685_12186" x="-18" y="-18" width="373" height="211" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="9"/>
+                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1685_12186"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1685_12186" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_1685_12186" x1="0" y1="0" x2="173.164" y2="277.307" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#7963A4"/>
+                      <stop offset="0.165" stop-color="#DFDFDF" stop-opacity="0.3"/>
+                      <stop offset="0.49" stop-color="#F8F8F8"/>
+                      <stop offset="0.83" stop-color="#F5F5F5" stop-opacity="0"/>
+                      <stop offset="1" stop-color="#7963A4" stop-opacity="0.882353"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <div class="section-3__card section-3__card--bottom">
+                <h3>Increased Conversions</h3>
+                <p>Convert leads into paying customers with effective, data-driven campaigns.</p>
+
+                <svg class="svg__desktop" xmlns="http://www.w3.org/2000/svg" width="386" height="268" viewBox="0 0 386 268" fill="none">
+                  <g filter="url(#filter0_b_1558_9001)">
+                    <path d="M0 20C0 8.9543 8.95431 0 20 0L366 0C377.046 0 386 8.9543 386 20V248C386 259.046 377.046 268 366 268H20C8.95431 268 0 259.046 0 248L0 20Z" fill="white" fill-opacity="0.11"/>
+                    <path d="M2.5 20C2.5 10.335 10.335 2.5 20 2.5L366 2.5C375.665 2.5 383.5 10.335 383.5 20V248C383.5 257.665 375.665 265.5 366 265.5H20C10.335 265.5 2.5 257.665 2.5 248L2.5 20Z" stroke="url(#paint0_linear_1558_9001)" stroke-width="5"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_b_1558_9001" x="-18" y="-18" width="422" height="304" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="9"/>
+                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1558_9001"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1558_9001" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_1558_9001" x1="0" y1="0" x2="290.396" y2="347.82" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#7963A4"/>
+                      <stop offset="0.165" stop-color="#DFDFDF" stop-opacity="0.3"/>
+                      <stop offset="0.49" stop-color="#F8F8F8"/>
+                      <stop offset="0.83" stop-color="#F5F5F5" stop-opacity="0"/>
+                      <stop offset="1" stop-color="#7963A4"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg class="svg__mobile" xmlns="http://www.w3.org/2000/svg" width="337" height="175" viewBox="0 0 337 175" fill="none">
+                  <g filter="url(#filter0_b_1685_12186)">
+                    <path d="M0 20C0 8.9543 8.95431 0 20 0L317 0C328.046 0 337 8.95431 337 20V155C337 166.046 328.046 175 317 175L20 175C8.9543 175 0 166.046 0 155L0 20Z" fill="white" fill-opacity="0.11"/>
+                    <path d="M2.5 20C2.5 10.335 10.335 2.5 20 2.5L317 2.5C326.665 2.5 334.5 10.335 334.5 20V155C334.5 164.665 326.665 172.5 317 172.5L20 172.5C10.335 172.5 2.5 164.665 2.5 155L2.5 20Z" stroke="url(#paint0_linear_1685_12186)" stroke-width="5"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_b_1685_12186" x="-18" y="-18" width="373" height="211" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="9"/>
+                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1685_12186"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1685_12186" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_1685_12186" x1="0" y1="0" x2="173.164" y2="277.307" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#7963A4"/>
+                      <stop offset="0.165" stop-color="#DFDFDF" stop-opacity="0.3"/>
+                      <stop offset="0.49" stop-color="#F8F8F8"/>
+                      <stop offset="0.83" stop-color="#F5F5F5" stop-opacity="0"/>
+                      <stop offset="1" stop-color="#7963A4" stop-opacity="0.882353"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <!-- background  -->
+            <img
+              class="section-3__background"
+              src="/assets/images/logo.webp"
+              alt="logo"
+            />
+
+            <!-- section 3 ellipses  -->
+            <div class="section-3__ellipse--1"></div>
+          </section>
+
+          <!-- section 4  -->
+          <section
+            class="slider-1"
+            data-logo="black"
+            data-nav="black"
+          >
+            <h2>
+              Choose the <span class="slider-1__rect"> <span></span></span> Email marketing Plan for Your Business
+            </h2>
+
+            <!-- section 4 cards  -->
+            <div class="slider-1__content">
+              <div class="slider-1__card slider-1__card--left">
+                <div class="slider-1__card__plan">Basic</div>
+
+                <h4>Starting at</h4>
+
+                <div>
+                  <span class="slider-1__card__price">$5,000</span>
+                  <span class="slider-1__card__period"> /month </span>
+                </div>
+
+                <span class="slider-1__card__divider"></span>
+
+                <div class="slider-1__card__benefits">
+                  <p>Blog posts</p>
+                  <p>Infographics</p>
+                </div>
+
+                <a href="">
+                  <span>
+                    <img
+                      src="/assets/images/arrow-white.svg"
+                      alt="arrow white"
+                    />
+                  </span>
+                  I want this
+                </a>
+              </div>
+
+              <div class="slider-1__card slider-1__card--center">
+                <div class="slider-1__card__plan">Advanced</div>
+
+                <h4>Starting at</h4>
+
+                <div>
+                  <span class="slider-1__card__price">$8,000</span>
+                  <span class="slider-1__card__period">/month</span>
+                </div>
+
+                <span class="slider-1__card__divider"></span>
+
+                <div class="slider-1__card__benefits">
+                  <p>Blog posts</p>
+                  <p>Infographics</p>
+                  <p>Video content</p>
+                </div>
+
+                <a href="">
+                  <span>
+                    <img
+                      src="/assets/images/arrow-white.svg"
+                      alt="arrow white"
+                    />
+                  </span>
+                  I want this
+                </a>
+              </div>
+
+              <div class="slider-1__card slider-1__card--right">
+                <div class="slider-1__card__plan">Basic</div>
+
+                <h4>Starting at</h4>
+
+                <div>
+                  <span class="slider-1__card__price">$10,000</span>
+                  <span class="slider-1__card__period">/month</span>
+                </div>
+                <span class="slider-1__card__divider"></span>
+
+                <div class="slider-1__card__benefits"><p>Campaign Full-service content creation including distribution and analytics</p></div>
+
+                <a href="">
+                  <span>
+                    <img
+                      src="/assets/images/arrow-white.svg"
+                      alt="arrow white"
+                    />
+                  </span>
+                  I want this
+                </a>
+              </div>
+            </div>
+
+            <!-- section 4 ellipses   -->
+            <div class="section-4__ellipse--1"></div>
+            <div class="section-4__ellipse--2"></div>
+          </section>
+
+          <!-- section 4 mobile  -->
+          <section
+            class="slider-1__mobile"
+            data-logo-mobile="black"
+            data-nav-mobile="black"
+          >
+            <h2>
+              Choose
+              <span class="slider-1__mobile__rect"></span>
+              The Email Marketing plan that fits your business goals & budget
+            </h2>
+
+            <div class="swiper swiper-mobile-1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider-1__card__plan">Basic</div>
+
+                  <h4>Starting at</h4>
+
+                  <div>
+                    <span class="slider-1__card__price">$5,000</span>
+                    <span class="slider-1__card__period"> /month </span>
+                  </div>
+
+                  <span class="slider-1__card__divider"></span>
+
+                  <div class="slider-1__card__benefits">
+                    <p>Blog posts</p>
+                    <p>Infographics</p>
+                  </div>
+
+                  <a href="">
+                    <span>
+                      <img
+                        src="/assets/images/arrow-white.svg"
+                        alt="arrow white"
+                      />
+                    </span>
+                    I want this
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slider-1__card__plan">Advanced</div>
+
+                  <h4>Starting at</h4>
+
+                  <div>
+                    <span class="slider-1__card__price">$8,000</span>
+                    <span class="slider-1__card__period">/month</span>
+                  </div>
+
+                  <span class="slider-1__card__divider"></span>
+
+                  <div class="slider-1__card__benefits">
+                    <p>Blog posts</p>
+                    <p>Infographics</p>
+                    <p>Video content</p>
+                  </div>
+
+                  <a href="">
+                    <span>
+                      <img
+                        src="/assets/images/arrow-white.svg"
+                        alt="arrow white"
+                      />
+                    </span>
+                    I want this
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slider-1__card__plan">Basic</div>
+
+                  <h4>Starting at</h4>
+
+                  <div>
+                    <span class="slider-1__card__price">$10,000</span>
+                    <span class="slider-1__card__period">/month</span>
+                  </div>
+                  <span class="slider-1__card__divider"></span>
+
+                  <div class="slider-1__card__benefits"><p>Campaign Full-service content creation including distribution and analytics</p></div>
+
+                  <a href="">
+                    <span>
+                      <img
+                        src="/assets/images/arrow-white.svg"
+                        alt="arrow white"
+                      />
+                    </span>
+                    I want this
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-mobile-1-pagination"></div>
+            </div>
+
+            <!-- background  -->
+            <div class="slider-1__mobile__ellipse"></div>
+          </section>
+
+          <!-- section 5  -->
+          <section
+            class="section-5"
+            data-logo="black"
+            data-nav="white"
+            data-logo-mobile="black"
+            data-nav-mobile="black"
+          >
+            <!-- section 5 content  -->
+            <div class="section-5__content">
+              <h2>
+                The
+                <span class="section-5__spacer">
+                  <span
+                    class="section-5__star"
+                    data-rotation
+                  >
+                    <img
+                      src="/assets/images/star-black.svg"
+                      alt="star black"
+                    />
+                  </span>
+                </span>
+                Importance of
+                <span class="section-5__rect"> <span></span></span>
+                Email Marketing
+              </h2>
+
+              <p>Email marketing consistently delivers one of the highest returns on investment.</p>
+
+              <p>With automated, personalized campaigns, you can nurture leads, engage customers, and drive significant conversions with targeted outreach.</p>
+            </div>
+
+            <!-- section 5 video  -->
+            <div class="section-5__image">
+              <video
+                src="/assets/videos/email-marketing-2.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+
+            <!-- section 5 ellipses  -->
+            <div class="section-5__ellipse--1"></div>
+          </section>
+
+          <!-- section 6  -->
+          <section
+            class="section-faqs"
+            data-logo="black"
+            data-nav="black"
+            data-logo-mobile="black"
+            data-nav-mobile="black"
+          >
+            <h2>Frequently <span>Asked</span> Questions</h2>
+
+            <!-- section 6 content  -->
+            <div class="section-faqs__content">
+              <details name="faqs">
+                <summary>
+                  <span>01.</span>
+
+                  <span class="custom-marker"
+                    ><img
+                      src="/assets/images/details-marker.svg"
+                      alt="marker"
+                  /></span>
+
+                  <span>What is email automation?</span>
+                </summary>
+
+                <p>Email automation allows you to send personalized emails triggered by user actions, like sign-ups or purchases.</p>
+              </details>
+
+              <details name="faqs">
+                <summary>
+                  <span>02.</span>
+
+                  <span class="custom-marker"
+                    ><img
+                      src="/assets/images/details-marker.svg"
+                      alt="marker"
+                  /></span>
+
+                  <span>How can email marketing improve conversions?</span>
+                </summary>
+
+                <p>By delivering relevant content at the right time, email marketing increases engagement and moves prospects through the sales funnel.</p>
+              </details>
+
+              <details name="faqs">
+                <summary>
+                  <span>03.</span>
+
+                  <span class="custom-marker"
+                    ><img
+                      src="/assets/images/details-marker.svg"
+                      alt="marker"
+                  /></span>
+
+                  <span>How do you track the success of email campaigns?</span>
+                </summary>
+
+                <p>We monitor open rates, click-through rates, and conversions to continuously optimize performance.</p>
+              </details>
+            </div>
+
+            <!-- background  -->
+            <div class="section-faqs__pattern">
+              <picture>
+                <source
+                  srcset="../assets/images/faqs-pink-mobile.svg"
+                  media="(max-width: 1023px)"
+                />
+
+                <img
+                  src="/assets/images/faqs-pink.webp"
+                  alt="pattern"
+                />
+              </picture>
+            </div>
+
+            <div class="section-faqs__ellipse"></div>
+          </section>
+        </main>
+
+        <!-- last global section -->
+        <section
+          class="global-last-section__wrapper"
+          data-logo="white"
+          data-nav="white"
+          data-logo-mobile="white"
+          data-nav-mobile="white"
+        >
+          <!-- title  -->
+          <div class="global-last-section__heading global-last-section__heading--email-marketing">
+            <h3 style="">Ready to Grow Your <span style="text-wrap: nowrap">Business with</span> Email Marketing?</h3>
+
+            <!-- button -->
+            <button
+              id="ready-button"
+              aria-label="click_to_go_down to-form"
+            >
+              <img
+                src="/icons/arrow_down.svg"
+                alt="click_to_go_down"
+                width="100"
+                height="100"
+                loading="lazy"
+              />
+            </button>
+          </div>
+
+          <!-- form  -->
+          <div id="form">
+            <form method="post" id="contact-form">
+              <div class="field">
+                  <input type="text" id="name" name="your_name" placeholder="Name" />
+              </div>
+              <div class="field">
+                  <input type="tel" id="phone" name="your_phone" placeholder="Phone (+)"/>
+              </div>
+              <div class="field email">
+                  <input type="email" id="email" name="your_email" placeholder="Your email" />
+              </div>
+              <div class="selectors">
+                  <div class="selector">
+                      <div class="question">Does your business need scaling?</div>
+                      <div class="answers">
+                          <label for="yes-scaling" class="answer">Yes
+                              <input type="radio" name="scaling" id="yes-scaling" value="Yes"  />
+                              <span class="checkmark"></span>
+                          </label>
+                          <label for="no-scaling" class="answer">No
+                              <input type="radio" name="scaling" id="no-scaling" value="No" />
+                              <span class="checkmark"></span>
+                          </label>
+                      </div>
+                  </div>
+                  <div class="selector">
+                      <div class="question">What does Digital Innovation mean for you as a business?</div>
+                      <div class="answers">
+                          <label for="no-idea" class="answer">No Idea
+                              <input type="radio" name="meaning" id="no-idea" value="No Idea" />
+                              <span class="checkmark"></span>
+                          </label>
+                          <label for="future" class="answer">The Future
+                              <input type="radio" name="meaning" id="future" value="The Future" />
+                              <span class="checkmark"></span>
+                          </label>
+                      </div>
+                  </div>
+                  <div class="selector">
+                      <div class="question">Does your business generate income at the moment?</div>
+                      <div class="answers">
+                          <label for="yes" class="answer">Yes
+                              <input type="radio" name="income" id="yes" value="Yes" />
+                              <span class="checkmark"></span>
+                          </label>
+                          <label for="no" class="answer">No
+                              <input type="radio" name="income" id="no" value="No" />
+                              <span class="checkmark"></span>
+                          </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="field message" id="last-message">
+                  <textarea
+                      id="message"
+                      name="your_message"
+                      placeholder="Share in a few words about your business, your niche and what are you looking for by partnering with OTT..."
+                  ></textarea>
+                  <div id="error-message" class="error-message"></div>
+              </div>
+              <!-- <button class="button light" type="submit" id="submit-button">
+                  <img class="arrow light" src="/icons/arrow_black.svg" alt="subscribe" loading="lazy" />
+                  Submit
+              </button> -->
+
+
+              <button
+              id="submit-button"
+              type="submit"
+              class="button light"
+            >
+              <span>
+                <img
+                  class="arrow light"
+                  src="/icons/arrow_black.svg"
+                  alt="subscribe"
+                  loading="lazy"
+                />
+              </span>
+              Submit
+            </button>
+            </form>
+            <div
+              id="sponsors"
+              class="sponsors splide"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_1.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_2.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_3.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_4.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_5.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_6.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_7.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_8.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_9.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      src="/images/sponsors/sponsor_10.png"
+                      alt="sponsor"
+                      loading="lazy"
+                      width="150"
+                      height="100"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- sponsors -->
+          <div
+            id="sponsors"
+            class="sponsors splide"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_1.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_2.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_3.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_4.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_5.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_6.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_7.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_8.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_9.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="/images/sponsors/sponsor_10.png"
+                    alt="sponsor"
+                    loading="lazy"
+                    width="150"
+                    height="100"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- footer  -->
+          <footer>
+            <div class="footer-section__top">
+              <div class="footer-section__logo">
+                <img
+                  src="/logos/logo_ott.svg"
+                  alt="logo ott"
+                />
+              </div>
+
+              <div class="footer-section__content">
+                <p>Only a top SEO agency can rank itself on page one of Google for the most competitive SEO-related.</p>
+
+                <div class="footer-section__contacts">
+                  <h3>Company</h3>
+                  <span>hello@overthetop.ae</span>
+                  <span>+971 5855 63070</span>
+                  <h4>Sunset Mall, Jumeira 3, Dubai, UAE</h4>
+                </div>
+
+                <div class="footer-section__subscribe">
+                  <h3>Subscribe to our newsletter</h3>
+                  <div class="footer-section__subscribe__input">
+                    <input
+                      type="email"
+                      placeholder="Your email"
+                    />
+
+                    <span class="footer-section__subscribe__input__arrow">
+                      <img
+                        src="../assets/images/mobile-arrow.svg"
+                        alt="arrow"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-section__divider"></div>
+
+            <div class="footer-section__bottom">
+              <p>© 2024 Over The Top UAE.</p>
+
+              <div class="footer-section__socials">
+                <a href="">
+                  <img
+                    src="/icons/socials/facebook.png"
+                    alt="facebook"
+                  />
+                </a>
+
+                <a href="">
+                  <img
+                    src="/icons/socials/linkedin.png"
+                    alt="linkedin"
+                  />
+                </a>
+
+                <a href="">
+                  <img
+                    src="/icons/socials/instagram.png"
+                    alt="instagram"
+                  />
+                </a>
+
+                <a href="">
+                  <img
+                    src="/icons/socials/x.png"
+                    alt="x"
+                  />
+                </a>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+
+    <!-- global video  -->
+    <div class="global-video__wrapper">
+      <video
+        class="video"
+        playsinline
+        muted
+        autoplay
+        loop
+        width="1920"
+        height="1080"
+        type="video/mp4"
+        src="/videos/revolutionize/3d-background-video.mp4"
+      ></video>
+    </div>

@@ -1,0 +1,361 @@
+@media screen and (min-width: 1024px) {
+  header {
+    position: fixed;
+    width: 100%;
+    height: calc(var(--top-padding));
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.71vw;
+    padding-inline: 2.1vw;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .brand-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .brand-link img {
+    width: 10vw;
+    height: 4.63vw;
+  }
+  .brand-link img:nth-of-type(1) {
+    z-index: 0;
+  }
+  .brand-link img:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    column-gap: 1.15vw;
+    z-index: 1;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.15vw;
+    width: fit-content;
+  }
+  nav ul li {
+    width: fit-content;
+  }
+  nav li:nth-child(2),
+  nav li:nth-child(4) {
+    display: none;
+  }
+  nav #language-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.31vw;
+    color: #fff !important;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 0.78vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    border: 0.11vw solid #fff !important;
+    padding: calc(var(--fs-navlink) * 0.25) calc(var(--fs-navlink) * 1) calc(var(--fs-navlink) * 0.2) calc(var(--fs-navlink) * 0.25);
+    white-space: nowrap;
+    border-radius: calc(var(--fs-navlink) * 4.6875);
+    height: calc(var(--fs-navlink) * 3.5);
+    padding-inline: 1.14vw;
+  }
+  nav #language-selector svg {
+    min-width: 0.5vw;
+    height: 0.5vw;
+    fill: white;
+  }
+  #support-button .support__button__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #support-button .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #support-button .arrow svg {
+    width: calc(var(--fs-root) * 1.5);
+    height: auto;
+  }
+  #support-button-menu-mobile {
+    display: none;
+  }
+  .nav__menu__button {
+    position: relative;
+    width: 4.32vw;
+    height: 1.1vw;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  .nav__menu__button .nav__menu__button__line {
+    position: absolute;
+    width: 100%;
+    background: #000;
+    transform-origin: right;
+    pointer-events: none;
+    height: 2px;
+  }
+  .nav__menu__button .nav__menu__button__line--top {
+    top: 0;
+    width: 100%;
+  }
+  .nav__menu__button .nav__menu__button__line--middle {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    will-change: transform;
+  }
+  .nav__menu__button .nav__menu__button__line--bottom {
+    bottom: 0;
+    width: 100%;
+  }
+  .nav__menu__button .nav__menu__button__line__close {
+    position: absolute;
+    width: 100%;
+    background: #000;
+    transform-origin: left;
+    pointer-events: none;
+    height: 2px;
+  }
+  .nav__menu__button .nav__menu__button__line__close--top {
+    transform: rotate(0) scaleX(0);
+    width: 100%;
+  }
+  .nav__menu__button .nav__menu__button__line__close--bottom {
+    bottom: 0;
+    transform: rotate(0) scaleX(0);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 7.2vw;
+    padding-inline: 5vw;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .brand-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .brand-link img {
+    width: 25vw;
+    height: 11vw;
+  }
+  .brand-link img:nth-of-type(1) {
+    z-index: 0;
+  }
+  .brand-link img:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    column-gap: 2.6vw;
+    z-index: 1;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2.6vw;
+  }
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(4) {
+    display: none;
+  }
+  nav #sound-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.8vw;
+    height: 8.26vw;
+    border: 1px solid #000;
+    padding-inline: 0;
+    border-radius: calc(var(--fs-navlink) * 4.6875);
+  }
+  nav #sound-button svg {
+    width: 7.73vw;
+  }
+  nav #sound-button svg path {
+    width: 100%;
+    height: 100%;
+  }
+  nav #language-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.06vw;
+    padding-inline: 2.93vw;
+    white-space: nowrap;
+    border-radius: calc(var(--fs-navlink) * 4.6875);
+    border: 1px solid #000;
+    background: transparent;
+    height: 8.26vw;
+    color: #0f0e05;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 3.1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
+  }
+  nav #language-selector svg {
+    width: 1.6vw;
+  }
+  #support-button {
+    display: none;
+  }
+  #support-button-menu-mobile {
+    display: none;
+  }
+  .nav__menu__button {
+    position: relative;
+    width: 10.4vw;
+    height: 5.33vw;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  .nav__menu__button .nav__menu__button__line {
+    position: absolute;
+    width: 100%;
+    background: #000;
+    transform-origin: right;
+    pointer-events: none;
+    height: 1.5px;
+  }
+  .nav__menu__button .nav__menu__button__line--top {
+    top: 0;
+    width: 100%;
+  }
+  .nav__menu__button .nav__menu__button__line--middle {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .nav__menu__button .nav__menu__button__line--bottom {
+    bottom: 0;
+    width: 100%;
+  }
+  .nav__menu__button .nav__menu__button__line__close {
+    position: absolute;
+    width: 9vw;
+    background: #000;
+    transform-origin: left;
+    pointer-events: none;
+    height: 1.5px;
+  }
+  .nav__menu__button .nav__menu__button__line__close--top {
+    transform: translateX(0%) rotate(25deg) scaleX(0);
+    width: 100%;
+  }
+  .nav__menu__button .nav__menu__button__line__close--bottom {
+    bottom: 0;
+    transform: translateX(0%) rotate(-25deg) scaleX(0);
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root[data-menu-open] .brand-link img:nth-of-type(2) {
+    opacity: 1 !important;
+  }
+  :root[data-menu-open] nav #sound-button {
+    border-color: #fff !important;
+  }
+  :root[data-menu-open] nav #sound-button svg path {
+    stroke: #fff !important;
+    border-color: #fff !important;
+  }
+  :root[data-menu-open] nav li:nth-child(2) {
+    display: block;
+  }
+  :root[data-menu-open] nav #support-button {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  :root[data-menu-open] nav #support-button .arrow {
+    background-color: #000 !important;
+  }
+  :root[data-menu-open] nav #support-button .arrow svg path {
+    fill: white !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  :root[data-menu-open] .brand-link img:nth-of-type(2) {
+    opacity: 1 !important;
+  }
+  :root[data-menu-open] nav #sound-button {
+    display: none;
+  }
+  :root[data-menu-open] nav li:nth-child(2) {
+    display: none;
+  }
+  :root[data-menu-open] nav li:nth-child(4) {
+    display: block;
+  }
+  :root[data-menu-open] nav #support-button-menu-mobile {
+    all: unset;
+    display: flex;
+    align-items: center;
+    column-gap: 3.4vw;
+    padding: 1.06vw;
+    padding-right: 4vw;
+    border: 1px solid #fff;
+    border-radius: 24vw;
+    color: #fff;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 2.66vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    pointer-events: all;
+  }
+  :root[data-menu-open] nav #support-button-menu-mobile span {
+    display: grid;
+    width: 5.87vw;
+    height: 5.87vw;
+    place-content: center;
+    border: 1px solid #fff;
+    border-radius: 100%;
+  }
+  :root[data-menu-open] nav #support-button-menu-mobile span svg {
+    width: 2.93vw;
+  }
+}

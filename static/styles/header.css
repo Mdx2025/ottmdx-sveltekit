@@ -1,0 +1,93 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: calc(var(--top-padding));
+  top: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 calc(var(--horizontal-padding) * 1) calc(var(--top-padding) * 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  opacity: 0;
+}
+
+.brand-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.brand-link img {
+  width: 10vw;
+  height: auto;
+}
+
+.brand-link img:nth-of-type(1) {
+  z-index: 0;
+}
+
+.brand-link img:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav {
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: calc(var(--fs-navlink));
+}
+
+#support-button .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#support-button .arrow svg {
+  width: calc(var(--fs-root) * 1.5);
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait) {
+  .brand-link img {
+    width: 17.5vw;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+  .brand-link img {
+    width: 20vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  nav ul {
+    gap: calc(var(--fs-navlink) * 0.75);
+  }
+  #support-button span {
+    display: none;
+  }
+  #support-button .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #support-button .arrow svg {
+    width: calc(var(--fs-root) * 1.25);
+    height: auto;
+  }
+  .brand-link img {
+    width: 25vw;
+    height: auto;
+  }
+}

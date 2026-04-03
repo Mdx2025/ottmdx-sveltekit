@@ -1,0 +1,44 @@
+.error {
+  border: 1px solid red !important;
+}
+
+.success {
+  border: 1px solid green;
+}
+
+.error-message {
+  color: red;
+}
+
+.error-border {
+  border: 2px solid red !important;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.loader {
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  border-top: 1px solid #282829;
+  width: 15px;
+  height: 15px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

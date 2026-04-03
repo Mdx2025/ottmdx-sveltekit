@@ -1,0 +1,390 @@
+@media screen and (max-width: 1023px) {
+  .svg__desktop {
+    display: none;
+  }
+  .main__wrapper {
+    overflow: hidden;
+    background: #fff;
+  }
+  .custom__floating__spinner {
+    top: 195vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* section 1  */
+  .section-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 9vw;
+    width: 100%;
+    padding-block: 30.93vw 29vw;
+    padding-inline: 5.6vw;
+  }
+  .section-1__content h2 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 6.9vw;
+    color: #0f0e05;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 9.33vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103%;
+  }
+  .section-1__content p:nth-of-type(1) {
+    margin-bottom: 5vw;
+    width: 84.3vw;
+    color: #0f0e05;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .section-1__content p:nth-of-type(2) {
+    width: 84.3vw;
+    color: #0f0e05;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 2.7vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+  }
+  .section-1__heading span,
+  .section-1__heading span img {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 9vw;
+    height: 9vw;
+  }
+  .section-1__image {
+    width: 100%;
+    height: 97vw;
+    border-radius: 8vw;
+    overflow: hidden;
+    background-color: black;
+  }
+  .section-1__image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* mix-blend-mode: luminosity; */
+    filter: grayscale(100%);
+    user-select: none;
+  }
+  .section-1__ellipse--1 {
+    position: absolute;
+    top: -18vw;
+    right: 0;
+    z-index: 0;
+    width: 58.4vw;
+    height: 58.4vw;
+    background: rgba(198, 0, 91, 0.65);
+    filter: blur(33.32vw);
+    border-radius: 100%;
+  }
+  .section-1__ellipse--2 {
+    display: none;
+  }
+  /* section 2  */
+  .benefits {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9.87vw;
+    align-items: center;
+    padding-inline: 5.6vw;
+  }
+  .benefits h2 {
+    width: 68.5vw;
+    color: #000;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 9.6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .benefits h2 .benefits__mobile__remove {
+    display: none;
+  }
+  .benefits h2 .benefits__highlight {
+    color: #7963a4;
+  }
+  .benefits h2 .benefits__rect {
+    position: relative;
+    display: inline-flex;
+    width: 9.86vw;
+    height: 1cap;
+  }
+  .benefits h2 .benefits__rect::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 0.5vw;
+    background: black;
+  }
+  .benefits__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vw;
+    width: 100%;
+  }
+  .benefits__content .benefits__card.benefits__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4vw;
+    width: 100%;
+    width: 89.87vw;
+    height: 41.33vw;
+    backdrop-filter: blur(2.4vw);
+    border-radius: 5.33vw;
+  }
+  .benefits .benefits__content .benefits__card.benefits__card svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* box-shadow: 4px 6px 12px #dedddd, -6px -6px 12px #ffffff; */
+    border-radius: 1.04vw;
+    transform: scaleX(1.13);
+  }
+  .benefits__content .benefits__card.benefits__card h3 {
+    width: 60.33vw;
+    color: #7963a4;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 4.27vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .benefits__content .benefits__card.benefits__card p {
+    width: 65vw;
+    color: #757575;
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 2.67vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .benefits__pattern,
+  .benefits__ellipse {
+    display: none;
+  }
+  /* section 3  */
+  .section-3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vw;
+    padding-block: 25vw 0;
+    padding-inline: 5.6vw;
+  }
+  .section-3__content {
+    position: relative;
+    z-index: 1;
+    width: 84.3vw;
+  }
+  .section-3__content h2 {
+    margin-bottom: 7.7vw;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 9.6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .section-3__content h2 .section-3__spacer {
+    display: none;
+  }
+  .section-3__content h2 .section-3__rect {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 9.86vw;
+    height: 0.5vw;
+    background: #000;
+  }
+  .section-3__content p:nth-of-type(1) {
+    margin-bottom: 3.7vw;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .section-3__content p:nth-of-type(2) {
+    color: #0f0e05;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 2.66vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+  }
+  .section-3__highlight {
+    color: #f9a530;
+  }
+  .section-3__image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 95.7vw;
+    border-radius: 8vw;
+    overflow: hidden;
+  }
+  .section-3__image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+  }
+  .section-3__ellipse {
+    position: absolute;
+    top: 52.13vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 58.4vw;
+    height: 58.4vw;
+    z-index: 0;
+    background: rgba(121, 99, 164, 0.52);
+    filter: blur(33.33vw);
+  }
+  /* section 4  */
+  .section-faqs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30vw;
+    padding-block: 25vw 22vw;
+    padding-inline: 5.07vw;
+  }
+  .section-faqs h2 {
+    position: relative;
+    z-index: 1;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 9.6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .section-faqs h2 span {
+    color: #57c600;
+  }
+  .section-faqs .section-faqs__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 2.7vw;
+  }
+  .section-faqs .section-faqs__content details {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(2.4vw);
+    list-style: none;
+    border-radius: 5.3vw;
+    transition: background-color 0.2s ease-out;
+    padding-block: 4.3vw;
+    padding-inline: 4.8vw;
+  }
+  .section-faqs .section-faqs__content details summary {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 4vw;
+    min-height: 8.5vw;
+  }
+  .section-faqs .section-faqs__content details p {
+    width: 65.6vw;
+    margin-left: 8.5vw;
+    margin-top: 4vw;
+    color: rgba(0, 0, 0, 0.65);
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 2.7vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .section-faqs .section-faqs__content details .custom-marker {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8.5vw;
+    height: 8.5vw;
+    background-color: #000;
+    transition: all 0.2s ease-out;
+    border-radius: 100%;
+  }
+  .section-faqs .section-faqs__content details .custom-marker img {
+    margin-left: 0.5vw;
+    height: 3.7vw;
+  }
+  .section-faqs .section-faqs__content details span:nth-child(3),
+  .section-faqs .section-faqs__content details span:nth-child(1) {
+    max-width: 60.5vw;
+    color: #000;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Poppins;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 138%;
+    text-transform: uppercase;
+  }
+  .section-faqs .section-faqs__content details span:nth-child(1) {
+    opacity: 0.3;
+    line-height: 120%;
+  }
+  .section-faqs__content details[open] {
+    background-color: rgba(87, 198, 0, 0.04);
+  }
+  .section-faqs__content details[open] > summary span {
+    color: #57c600 !important;
+  }
+  .section-faqs__content details[open] > summary .custom-marker {
+    background-color: #57c600 !important;
+    transform: rotate(90deg);
+  }
+  .section-faqs .section-faqs__pattern {
+    position: absolute;
+    top: 35vw;
+    left: -5vw;
+    width: 95vw;
+    height: 63vw;
+    z-index: 0;
+    background: #fff;
+  }
+  .section-faqs .section-faqs__pattern img {
+    width: 100%;
+    height: 100%;
+  }
+  .section-faqs .section-faqs__ellipse {
+    display: none;
+  }
+}

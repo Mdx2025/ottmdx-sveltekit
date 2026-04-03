@@ -1,0 +1,1 @@
+export const isMobile = () => window.screen.width / window.screen.height < 1 && window.screen.width <= 1080;
