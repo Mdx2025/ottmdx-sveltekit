@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
+	import { base } from '$app/paths';
 	import { onDestroy, onMount, tick } from 'svelte';
 
 	type LegacyPageProps = {
@@ -32,6 +33,58 @@
 	const appendedScripts: HTMLScriptElement[] = [];
 	const disposers: Array<() => void> = [];
 	let previousBodyClass = '';
+
+	function withBase(path: string) {
+		if (!base) return path;
+		if (path.startsWith('/')) {
+			if (path.startsWith(`${base}/`) || path === base) return path;
+			return `${base}${path}`;
+		}
+		if (/^(?:\.\.\/|\.\/)+(assets|videos|images|icons|logos|audio|favicon|odometer|styles)\//.test(path)) {
+			return `${base}/${path.replace(/^(?:\.\.\/|\.\/)+/, '')}`;
+		}
+		return path;
+	}
+
+	function rewriteAssetPath(path: string) {
+		return withBase(path);
+	}
+
+	function rewriteBodyHtml(html: string) {
+		if (!base) return html;
+
+		return html
+			.replace(/\b(href|src|poster|action)=(['"])(\/|(?:\.\.\/|\.\/)+(?:assets|videos|images|icons|logos|audio|favicon|odometer|styles)\/)/g, (_match, attr, quote, pathStart) => {
+				const rewritten = pathStart.startsWith('/') ? withBase(pathStart) : rewriteAssetPath(pathStart);
+				return `${attr}=${quote}${rewritten}`;
+			})
+			.replace(/\b(srcset)=(['"])(.*?)\2/g, (_match, attr, quote, value) => {
+				const rewritten = String(value)
+					.split(',')
+					.map((entry) => {
+						const trimmed = entry.trim();
+						const firstSpace = trimmed.indexOf(' ');
+						const rawPath = firstSpace === -1 ? trimmed : trimmed.slice(0, firstSpace);
+						const rest = firstSpace === -1 ? '' : trimmed.slice(firstSpace);
+						const nextPath = rewriteAssetPath(rawPath);
+						return nextPath === rawPath ? trimmed : `${nextPath}${rest}`;
+					})
+					.join(', ');
+				return `${attr}=${quote}${rewritten}${quote}`;
+			});
+	}
+
+	function getResolvedStyles() {
+		return styles.map(withBase);
+	}
+
+	function getResolvedPlainScripts() {
+		return plainScripts.map(withBase);
+	}
+
+	function getResolvedBodyHtml() {
+		return rewriteBodyHtml(bodyHtml);
+	}
 
 	function loadExternalScript(src: string) {
 		return new Promise<void>((resolve, reject) => {
@@ -67,7 +120,7 @@
 			}
 		});
 
-		for (const src of plainScripts) {
+		for (const src of getResolvedPlainScripts()) {
 			await loadExternalScript(src);
 		}
 
@@ -106,11 +159,11 @@
 	{/if}
 		<meta property="og:title" content={title} />
 		<meta name="twitter:title" content={title} />
-	{#each styles as href}
+	{#each getResolvedStyles() as href}
 		<link rel="stylesheet" href={href} />
 	{/each}
 </svelte:head>
 
 <div class="min-h-screen">
-	{@html bodyHtml}
+	{@html getResolvedBodyHtml()}
 </div>

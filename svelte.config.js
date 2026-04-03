@@ -1,6 +1,8 @@
 import adapter from '@sveltejs/adapter-static';
 import { relative, sep } from 'node:path';
 
+const base = process.env.GITHUB_ACTIONS ? '/ottmdx-sveltekit' : '';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	compilerOptions: {
@@ -19,6 +21,9 @@ const config = {
 			precompress: false,
 			strict: false
 		}),
+		paths: {
+			base
+		},
 		prerender: {
 			entries: ['*']
 		}
