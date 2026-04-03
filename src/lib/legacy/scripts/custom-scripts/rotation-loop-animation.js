@@ -1,12 +1,20 @@
 import { gsap } from "gsap";
 
-window.addEventListener("DOMContentLoaded", function () {
+export default function initRotationLoopAnimation() {
   const rotationElements = document.querySelectorAll("[data-rotation]");
 
-  gsap.to([...rotationElements], {
+  if (!rotationElements.length) {
+    return;
+  }
+
+  const tween = gsap.to([...rotationElements], {
     rotation: 360,
     repeat: -1,
     duration: 10,
     ease: "none",
   });
-});
+
+  return () => {
+    tween.kill();
+  };
+}

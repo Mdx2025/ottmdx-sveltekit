@@ -2,12 +2,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
 
-window.addEventListener("DOMContentLoaded", function () {
-  gsap.registerPlugin(CustomEase, ScrollTrigger);
+const filterTargets = (targets) => targets.filter(Boolean);
 
+export default function initHeaderAnimation() {
+  gsap.registerPlugin(CustomEase, ScrollTrigger);
   CustomEase.create("io1", "0.075, 0.82, 0.165, 1");
 
-  let mm = gsap.matchMedia();
+  const mm = gsap.matchMedia();
 
   mm.add("(min-width: 1024px)", () => {
     headerDesktopAnimation();
@@ -16,7 +17,11 @@ window.addEventListener("DOMContentLoaded", function () {
   mm.add("(max-width: 1023px)", () => {
     headerMobileAnimation();
   });
-});
+
+  return () => {
+    mm.revert();
+  };
+}
 
 const headerDesktopAnimation = () => {
   const logo = document.querySelector(".brand-link img:nth-of-type(2)");
@@ -44,13 +49,13 @@ const headerDesktopAnimation = () => {
           duration: 0.5,
         });
 
-        gsap.to([soundButton, soundButtonSvg], {
+        gsap.to(filterTargets([soundButton, soundButtonSvg]), {
           borderColor: sectionNav === "white" ? "#fff" : "#000",
           stroke: sectionNav === "white" ? "#fff" : "#000",
           duration: 0.5,
         });
 
-        gsap.to([supportButton], {
+        gsap.to(filterTargets([supportButton]), {
           backgroundColor: sectionNav === "white" ? "#fff" : "#000",
           color: sectionNav === "white" ? "#000" : "#fff",
           borderColor: sectionNav === "white" ? "#fff" : "#000",
@@ -58,7 +63,7 @@ const headerDesktopAnimation = () => {
           duration: 0.5,
         });
 
-        gsap.to([supportButtonArrow, supportButtonArrowSvg], {
+        gsap.to(filterTargets([supportButtonArrow, supportButtonArrowSvg]), {
           backgroundColor: sectionNav === "white" ? "#000" : "#fff",
           fill: sectionNav === "white" ? "#fff" : "#000",
           duration: 0.5,
@@ -76,22 +81,21 @@ const headerDesktopAnimation = () => {
           duration: 0.5,
         });
 
-        gsap.to([soundButton, soundButtonSvg], {
+        gsap.to(filterTargets([soundButton, soundButtonSvg]), {
           borderColor: sectionNav === "white" ? "#fff" : "#000",
           stroke: sectionNav === "white" ? "#fff" : "#000",
           duration: 0.5,
         });
 
-        gsap.to([supportButton], {
+        gsap.to(filterTargets([supportButton]), {
           backgroundColor: sectionNav === "white" ? "#fff" : "#000",
           color: sectionNav === "white" ? "#000" : "#fff",
           borderColor: sectionNav === "white" ? "#fff" : "#000",
           outlineColor: sectionNav === "white" ? "#fff" : "#000",
-
           duration: 0.5,
         });
 
-        gsap.to([supportButtonArrow, supportButtonArrowSvg], {
+        gsap.to(filterTargets([supportButtonArrow, supportButtonArrowSvg]), {
           backgroundColor: sectionNav === "white" ? "#000" : "#fff",
           fill: sectionNav === "white" ? "#fff" : "#000",
           duration: 0.5,
@@ -134,7 +138,7 @@ const headerMobileAnimation = () => {
           duration: 0.5,
         });
 
-        gsap.to([soundButton, soundButtonSvg, languageSelector, languageSelectorSvg], {
+        gsap.to(filterTargets([soundButton, soundButtonSvg, languageSelector, languageSelectorSvg]), {
           borderColor: sectionNav === "white" ? "#fff" : "#000",
           color: sectionNav === "white" ? "#fff" : "#000",
           fill: sectionNav === "white" ? "#fff" : "#000",
@@ -142,14 +146,14 @@ const headerMobileAnimation = () => {
           duration: 0.5,
         });
 
-        gsap.to([supportButton], {
+        gsap.to(filterTargets([supportButton]), {
           backgroundColor: sectionNav === "white" ? "#fff" : "#000",
           color: sectionNav === "white" ? "#000" : "#fff",
           borderColor: sectionNav === "white" ? "#fff" : "#000",
           duration: 0.5,
         });
 
-        gsap.to([supportButtonArrow, supportButtonArrowSvg], {
+        gsap.to(filterTargets([supportButtonArrow, supportButtonArrowSvg]), {
           backgroundColor: sectionNav === "white" ? "#000" : "#fff",
           fill: sectionNav === "white" ? "#fff" : "#000",
           duration: 0.5,
@@ -167,7 +171,7 @@ const headerMobileAnimation = () => {
           duration: 0.5,
         });
 
-        gsap.to([soundButton, soundButtonSvg, languageSelector, languageSelectorSvg], {
+        gsap.to(filterTargets([soundButton, soundButtonSvg, languageSelector, languageSelectorSvg]), {
           borderColor: sectionNav === "white" ? "#fff" : "#000",
           color: sectionNav === "white" ? "#fff" : "#000",
           fill: sectionNav === "white" ? "#fff" : "#000",
@@ -175,14 +179,14 @@ const headerMobileAnimation = () => {
           duration: 0.5,
         });
 
-        gsap.to([supportButton], {
+        gsap.to(filterTargets([supportButton]), {
           backgroundColor: sectionNav === "white" ? "#fff" : "#000",
           color: sectionNav === "white" ? "#000" : "#fff",
           borderColor: sectionNav === "white" ? "#fff" : "#000",
           duration: 0.5,
         });
 
-        gsap.to([supportButtonArrow, supportButtonArrowSvg], {
+        gsap.to(filterTargets([supportButtonArrow, supportButtonArrowSvg]), {
           backgroundColor: sectionNav === "white" ? "#000" : "#fff",
           fill: sectionNav === "white" ? "#fff" : "#000",
           duration: 0.5,
