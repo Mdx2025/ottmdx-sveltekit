@@ -448,7 +448,7 @@
     border-radius: 1.04vw;
   }
   .slider-1__card.slider-1__card {
-    background-image: url("/assets/images/gradient-neutral-mid.svg");
+    background-image: url("../assets/images/gradient-neutral-mid.svg");
     background-size: 100% 100%;
   }
   .slider-1__card__plan {
@@ -563,7 +563,7 @@
     top: -0.8vw;
     transform-origin: center;
     transform: translate(-50%, 0);
-    background-image: url("/assets/images/gradient-large-purple.svg");
+    background-image: url("../assets/images/gradient-large-purple.svg");
     background-size: 100% 100%;
   }
   .slider-1__card.slider-1__card--left {

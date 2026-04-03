@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const asset = (path) => `${window.__OTT_BASE__ || ''}${path}`;
     const form = document.getElementById('contact-form');
     const errorMessageDiv = document.getElementById('error-message');
     const last_message = document.getElementById('last-message');
@@ -112,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (allValid) {
             errorMessageDiv.textContent = '';
             submit_btn.innerHTML = `
-                <img class="arrow light" src="/icons/arrow_black.svg" alt="subscribe" loading="lazy" />
+                <img class="arrow light" src="${asset('/icons/arrow_black.svg')}" alt="subscribe" loading="lazy" />
                 <div class="loader"></div>
             `
             submit_btn.disabled = true;
@@ -152,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .finally(() => {
                 submit_btn.disabled = false;
                 submit_btn.innerHTML = `
-                <img class="arrow light" src="/icons/arrow_black.svg" alt="subscribe" loading="lazy" />
+                <img class="arrow light" src="${asset('/icons/arrow_black.svg')}" alt="subscribe" loading="lazy" />
                 Submit
                 `;
             });

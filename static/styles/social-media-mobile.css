@@ -132,7 +132,7 @@
     padding-inline: 5.4vw;
     min-height: 100vw;
     width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("/assets/images/social-media-1-mobile.webp") lightgray 50%/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../assets/images/social-media-1-mobile.webp") lightgray 50%/cover no-repeat;
   }
   .section-2__content {
     display: flex;
@@ -254,7 +254,7 @@
     height: 113.87vw;
     padding-inline: 11.2vw;
     padding-block: 8vw;
-    background-image: url("/assets/images/gradient-mobile-1-pink.svg");
+    background-image: url("../assets/images/gradient-mobile-1-pink.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     backdrop-filter: blur(2.4vw);

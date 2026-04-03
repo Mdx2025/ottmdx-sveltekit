@@ -29,6 +29,12 @@
 		default?: () => void | (() => void);
 	};
 
+	type InlineScript = {
+		content?: string;
+		src?: string;
+		type?: string;
+	};
+
 	const moduleRegistry = import.meta.glob<LegacyModule>('/src/lib/legacy/scripts/**/*.{js,ts}');
 	const appendedScripts: HTMLScriptElement[] = [];
 	const disposers: Array<() => void> = [];
@@ -74,6 +80,27 @@
 			});
 	}
 
+	function extractBodyScripts(html: string) {
+		const scripts: InlineScript[] = [];
+		const stripped = html.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, (_match, attrs = '', content = '') => {
+			const srcMatch = attrs.match(/\bsrc=(['"])(.*?)\1/i);
+			const typeMatch = attrs.match(/\btype=(['"])(.*?)\1/i);
+
+			scripts.push({
+				src: srcMatch ? withBase(srcMatch[2]) : undefined,
+				type: typeMatch ? typeMatch[2] : undefined,
+				content: srcMatch ? undefined : content.trim()
+			});
+
+			return '';
+		});
+
+		return {
+			html: rewriteBodyHtml(stripped),
+			scripts
+		};
+	}
+
 	function getResolvedStyles() {
 		return styles.map(withBase);
 	}
@@ -83,10 +110,14 @@
 	}
 
 	function getResolvedBodyHtml() {
-		return rewriteBodyHtml(bodyHtml);
+		return extractBodyScripts(bodyHtml).html;
 	}
 
-	function loadExternalScript(src: string) {
+	function getInlineBodyScripts() {
+		return extractBodyScripts(bodyHtml).scripts;
+	}
+
+	function loadExternalScript(src: string, type?: string) {
 		return new Promise<void>((resolve, reject) => {
 			if (!browser) {
 				resolve();
@@ -101,6 +132,7 @@
 			const script = document.createElement('script');
 			script.src = src;
 			script.async = false;
+			if (type) script.type = type;
 			script.onload = () => resolve();
 			script.onerror = () => reject(new Error(`Failed to load script: ${src}`));
 			document.body.appendChild(script);
@@ -108,9 +140,25 @@
 		});
 	}
 
+	async function runInlineBodyScript(scriptDef: InlineScript) {
+		if (scriptDef.src) {
+			await loadExternalScript(scriptDef.src, scriptDef.type);
+			return;
+		}
+
+		if (!scriptDef.content?.trim()) return;
+
+		const script = document.createElement('script');
+		if (scriptDef.type) script.type = scriptDef.type;
+		script.textContent = scriptDef.content;
+		document.body.appendChild(script);
+		appendedScripts.push(script);
+	}
+
 	onMount(async () => {
 		previousBodyClass = document.body.className;
 		document.body.className = bodyClass;
+		(window as Window & { __OTT_BASE__?: string }).__OTT_BASE__ = base;
 
 		await tick();
 
@@ -122,6 +170,10 @@
 
 		for (const src of getResolvedPlainScripts()) {
 			await loadExternalScript(src);
+		}
+
+		for (const scriptDef of getInlineBodyScripts()) {
+			await runInlineBodyScript(scriptDef);
 		}
 
 		for (const key of moduleScripts) {

@@ -200,7 +200,7 @@
     padding-inline: 5.4vw;
     min-height: 100vw;
     width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("/assets/images/public-relations-1.webp") lightgray -511px -86.059px/289.934% 124.208% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("../assets/images/public-relations-1.webp") lightgray -511px -86.059px/289.934% 124.208% no-repeat;
   }
   .section-3__content {
     display: flex;

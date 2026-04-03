@@ -164,7 +164,7 @@
     row-gap: 3vw;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("/assets/images/ppc-&-sem-1.webp") lightgray 50%/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../assets/images/ppc-&-sem-1.webp") lightgray 50%/cover no-repeat;
   }
   .section-2 p {
     width: 86.14vw;
@@ -204,7 +204,7 @@
     transform: translateY(-50%);
     width: 100%;
     height: 100%;
-    background-image: url("/assets/images/arrow-white.svg");
+    background-image: url("../assets/images/arrow-white.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -230,7 +230,7 @@
     transform: translateY(-50%);
     width: 100%;
     height: 100%;
-    background-image: url("/assets/images/rect-white.svg");
+    background-image: url("../assets/images/rect-white.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -478,7 +478,7 @@
     border-radius: 1.04vw;
   }
   .slider-1__card.slider-1__card {
-    background-image: url("/assets/images/gradient-neutral-mid.svg");
+    background-image: url("../assets/images/gradient-neutral-mid.svg");
     background-size: 100% 100%;
   }
   .slider-1__card__plan {
@@ -593,7 +593,7 @@
     top: -0.8vw;
     transform-origin: center;
     transform: translate(-50%, 0);
-    background-image: url("/assets/images/gradient-large-purple.svg");
+    background-image: url("../assets/images/gradient-large-purple.svg");
     background-size: 100% 100%;
   }
   .slider-1__card.slider-1__card--left {

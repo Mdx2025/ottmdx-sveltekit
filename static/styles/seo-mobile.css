@@ -312,7 +312,7 @@
     height: 113.87vw;
     padding-inline: 11.2vw;
     padding-block: 8vw;
-    background-image: url("/assets/images/gradient-mobile-1-purple.svg");
+    background-image: url("../assets/images/gradient-mobile-1-purple.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     backdrop-filter: blur(2.4vw);

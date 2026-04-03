@@ -133,7 +133,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("/assets/images/social-media-1.webp") lightgray 50%/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../assets/images/social-media-1.webp") lightgray 50%/cover no-repeat;
   }
   .section-2__content {
     display: flex;
@@ -260,7 +260,7 @@
     padding-block: 2.24vw 3.91vw;
     border-radius: 1.04vw;
     backdrop-filter: blur(0.47vw);
-    background-image: url("/assets/images/gradient-neutral-mid.svg");
+    background-image: url("../assets/images/gradient-neutral-mid.svg");
     background-size: 100% 100%;
   }
   .slider-1__card__plan {
@@ -375,7 +375,7 @@
     top: -0.8vw;
     transform-origin: center;
     transform: translate(-50%, 0);
-    background-image: url("/assets/images/gradient-large-pink.svg");
+    background-image: url("../assets/images/gradient-large-pink.svg");
     background-size: 100% 100%;
   }
   .slider-1__card.slider-1__card--left {

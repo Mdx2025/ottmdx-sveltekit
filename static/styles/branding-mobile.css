@@ -218,7 +218,7 @@
     width: 100%;
     min-height: 100vh;
     padding-block: 21.3vw;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("/assets/images/branding-1-mobile.webp") lightgray 50%/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../assets/images/branding-1-mobile.webp") lightgray 50%/cover no-repeat;
   }
   .section-3__content {
     position: relative;
@@ -272,7 +272,7 @@
     display: inline-flex;
     height: 1cap;
     vertical-align: middle;
-    background-image: url("/assets/images/mobile-arrow.svg");
+    background-image: url("../assets/images/mobile-arrow.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -319,7 +319,7 @@
     height: 113.87vw;
     padding-inline: 11.2vw;
     padding-block: 8vw;
-    background-image: url("/assets/images/gradient-mobile-1-purple.svg");
+    background-image: url("../assets/images/gradient-mobile-1-purple.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     backdrop-filter: blur(2.4vw);

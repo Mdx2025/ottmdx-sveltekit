@@ -47,7 +47,7 @@
     margin-inline: 4.3vw 2.9vw;
     width: 8.8vw;
     height: 9.67vw;
-    background-image: url("/assets/images/mobile-arrow-black.svg");
+    background-image: url("../assets/images/mobile-arrow-black.svg");
     background-size: 100% 100%;
   }
   .section-1__content p:nth-of-type(1) {
